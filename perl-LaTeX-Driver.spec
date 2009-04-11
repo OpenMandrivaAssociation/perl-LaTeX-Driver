@@ -19,6 +19,8 @@ BuildRequires: perl(Exception::Class)
 BuildRequires: perl(File::Slurp)
 BuildRequires: perl(File::Spec)
 BuildRequires: perl(IO::File)
+BuildRequires: tetex-latex ghostscript-common
+Requires: tetex-latex ghostscript-common
 
 BuildArch: noarch
 
@@ -56,7 +58,7 @@ rm -rf %buildroot
 
 %files
 %defattr(-,root,root)
-%doc README README README Changes
+%doc README Changes
 %{_bindir}/*
 %{_mandir}/man1/*
 %{_mandir}/man3/*
