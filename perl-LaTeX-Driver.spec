@@ -1,6 +1,6 @@
 %define realname   LaTeX-Driver
 %define version    0.08
-%define release    %mkrel 1
+%define release    %mkrel 2
 
 Name:       perl-%{realname}
 Version:    %{version}
