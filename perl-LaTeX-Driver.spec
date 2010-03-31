@@ -46,7 +46,7 @@ yes | %{__perl} Makefile.PL INSTALLDIRS=vendor
 %make
 
 %check
-make test
+TMPDIR=/tmp %make test
 
 %install
 rm -rf %buildroot
