@@ -39,7 +39,7 @@ with the 'cleanup' method.
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
-%patch0 -b .fixtest
+%patch0 -p0 -b .fixtest
 
 %build
 yes | %{__perl} Makefile.PL INSTALLDIRS=vendor
