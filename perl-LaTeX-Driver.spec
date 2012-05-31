@@ -1,16 +1,15 @@
 %define upstream_name    LaTeX-Driver
-%define upstream_version 0.08
+%define upstream_version 0.10
 
 Name:       perl-%{upstream_name}
 Version:    %perl_convert_version %{upstream_version}
-Release:    %mkrel 3
+Release:    %mkrel 1
 
 Summary:    Driver to run LaTeX, bibtex and makeindex
 License:    GPL+ or Artistic
 Group:      Development/Perl
 Url:        http://search.cpan.org/dist/%{upstream_name}
 Source0:    http://www.cpan.org/modules/by-module/LaTeX/%{upstream_name}-%{upstream_version}.tar.gz
-Patch0:     LaTeX-Driver.test.patch
 
 BuildRequires: perl(Class::Accessor)
 BuildRequires: perl(Cwd)
@@ -39,7 +38,6 @@ with the 'cleanup' method.
 
 %prep
 %setup -q -n %{upstream_name}-%{upstream_version}
-%patch0 -p0 -b .fixtest
 
 %build
 yes | %{__perl} Makefile.PL INSTALLDIRS=vendor
