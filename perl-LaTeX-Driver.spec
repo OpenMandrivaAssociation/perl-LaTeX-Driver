@@ -17,7 +17,7 @@ BuildRequires:	perl(Exception::Class)
 BuildRequires:	perl(File::Slurp)
 BuildRequires:	perl(File::Spec)
 BuildRequires:	perl(IO::File)
-BuildRequires:	tetex-latex ghostscript-common
+BuildRequires:	tetex-latex ghostscript-common perl-devel
 Requires:	tetex-latex ghostscript-common
 
 BuildArch:	noarch
