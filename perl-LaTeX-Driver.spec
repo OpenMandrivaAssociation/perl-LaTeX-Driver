@@ -13,6 +13,7 @@ Url:		http://search.cpan.org/dist/%{upstream_name}
 Source0:	http://www.cpan.org/modules/by-module/LaTeX/%{upstream_name}-%{version}.tar.gz
 
 BuildRequires:	perl-devel
+BuildRequires: perl(File::pushd)
 BuildRequires:	perl(Class::Accessor)
 BuildRequires:	perl(Cwd)
 BuildRequires:	perl(Exception::Class)
